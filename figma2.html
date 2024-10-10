@@ -24,6 +24,7 @@
             display: block;
             unicode-bidi: isolate;
             width: 125%;
+            font-family: 'Noto Sans KR', -apple-system, Roboto, Helvetica, sans-serif;
         }
 
         .title-container > h1 {
@@ -90,7 +91,6 @@
         }
         
         .slider-thumb {
-          width: 35px;
           aspect-ratio: 1;
           object-fit: contain;
         }
@@ -121,6 +121,7 @@
         .option-text {
           font-size: 8px;
           line-height: 24px;
+          color: #727680;
         }
         
         .submit-button {
@@ -133,6 +134,18 @@
           font-size: 12px;
           cursor: pointer;
           width: 125%;
+        }
+
+        .submit-button:hover {
+            background-color: #24945e;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 36px;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            width: 125%;
         }
         
         .visually-hidden {
@@ -162,6 +175,25 @@
             font-size: 12px;
             color: #727680;
         }
+        .checkbox-square {
+            border-radius: 6px;
+            background-color: #fff;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            width: 20px;
+            height: 20px;
+        }
+        .option-title {
+            font-size: 8px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 12px;
+            font-weight: 1000;
+            color: #000;
+        }
         </style>
 </head>
 <body>
@@ -180,7 +212,7 @@
                 <h2 class="section-title">데이터량</h2>
                 <div class="right-aligned">
                     <h2 class="iternal">무제한</h2>
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9fadc6df4ef1caee205fd8341a124e775d3560705c2dc753965e64b8c1cea2ba?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="Slider thumb" class="slider-thumb">
+                    <img src="img\checkbox2.png" alt="Slider thumb" class="slider-thumb">
                 </div>
               </div>
               <div class="section-content">
@@ -196,7 +228,13 @@
             </section>
         
             <section>
-              <h2 class="section-title">통화량</h2>
+                <div class="section-title-container">
+                    <h2 class="section-title">통화량</h2>
+                    <div class="right-aligned">
+                        <h2 class="iternal">무제한</h2>
+                        <img src="img\checkbox2.png" alt="Slider thumb" class="slider-thumb">
+                    </div>
+                </div>
               <div class="section-content">
                 <div class="slider-container">
                   <span class="slider-label">0분</span>
@@ -210,7 +248,13 @@
             </section>
         
             <section>
-              <h2 class="section-title">문자량</h2>
+                <div class="section-title-container">
+                    <h2 class="section-title">문자량</h2>
+                    <div class="right-aligned">
+                        <h2 class="iternal">무제한</h2>
+                        <img src="img\checkbox2.png" alt="Slider thumb" class="slider-thumb">
+                    </div>
+                </div>
               <div class="section-content">
                 <div class="slider-container">
                   <span class="slider-label">0건</span>
@@ -230,35 +274,35 @@
                   <li class="option-item">
                     <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/64fa0dbf8bd644a063927880b609cc5017d4dab8f6e237a27a3bbdd7087b963e?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="" class="option-icon">
                     <div>
-                      <p class="option-text">1Mbps 미만</p>
+                      <p class="option-title">1Mbps 미만</p>
                       <p class="option-text">카톡 텍스트는 되지만 사진은 느려요</p>
                     </div>
                   </li>
                   <li class="option-item">
-                    <div class="option-icon"></div>
+                    <img src="img\radio.png" alt="" class="option-icon">
                     <div>
-                      <p class="option-text">1Mbps</p>
+                      <p class="option-title">1Mbps</p>
                       <p class="option-text">3G보다 조금 느려요</p>
                     </div>
                   </li>
                   <li class="option-item">
-                    <div class="option-icon"></div>
+                    <img src="img\radio.png" alt="" class="option-icon">
                     <div>
-                      <p class="option-text">3Mbps</p>
+                      <p class="option-title">3Mbps</p>
                       <p class="option-text">유튜브를 720p 화질로 볼 수 있어요</p>
                     </div>
                   </li>
                   <li class="option-item">
-                    <div class="option-icon"></div>
+                    <img src="img\radio.png" alt="" class="option-icon">
                     <div>
-                      <p class="option-text">5Mbps</p>
+                      <p class="option-title">5Mbps</p>
                       <p class="option-text">유튜브를 1080p 화질로 볼 수 있어요</p>
                     </div>
                   </li>
                   <li class="option-item">
-                    <div class="option-icon"></div>
+                    <img src="img\radio.png" alt="" class="option-icon">
                     <div>
-                      <p class="option-text">10Mbps</p>
+                      <p class="option-title">10Mbps</p>
                       <p class="option-text">유튜브 고화질도 문제 없어요</p>
                     </div>
                   </li>
@@ -275,11 +319,11 @@
                     <p class="option-text">5G</p>
                   </li>
                   <li class="option-item">
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/64fa0dbf8bd644a063927880b609cc5017d4dab8f6e237a27a3bbdd7087b963e?placeholderIfAbsent=true&amp;apiKey=c94bd488190e477b9d82656046f3d51b" alt="" class="option-icon">
+                    <img src="img\radio.png" alt="" class="option-icon">
                     <p class="option-text">4G (LTE)</p>
                   </li>
                   <li class="option-item">
-                    <div class="option-icon"></div>
+                    <img src="img\radio.png" alt="" class="option-icon">
                     <p class="option-text">3G</p>
                   </li>
                 </ul>
@@ -295,11 +339,11 @@
                     <p class="option-text">SKT망</p>
                   </li>
                   <li class="option-item">
-                    <div class="option-icon"></div>
+                    <img src="img\checkbox1.png" alt="" class="option-icon">
                     <p class="option-text">KT망</p>
                   </li>
                   <li class="option-item">
-                    <div class="option-icon"></div>
+                    <img src="img\checkbox1.png" alt="" class="option-icon">
                     <p class="option-text">LG U+망</p>
                   </li>
                 </ul>
