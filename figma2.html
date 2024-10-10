@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+    <title>Final</title>
+    <style>
+        .plan-change-conditions {
+          background-color: #f3f5f7;
+          max-width: 480px;
+          width: 100%;
+          margin: 0 auto;
+          padding-bottom: 18px;
+          overflow: hidden;
+        }
+        
+        .header-image {
+          width: 100%;
+          aspect-ratio: 8.55;
+          object-fit: contain;
+        }
+        
+        section {
+            display: block;
+            unicode-bidi: isolate;
+            width: 125%;
+        }
+
+        .title-container > h1 {
+            margin-left: 70px;
+        }
+
+        .title-container {
+          display: flex;
+          align-items: center;
+          margin-left: 15px;
+          gap: 40px;
+          margin-top: 13px;
+          max-width: 360px;
+          width: 100%;
+          color: #000;
+          font: 500 16px/1.4 'Noto Sans KR', -apple-system, Roboto, Helvetica, sans-serif;
+        }
+        
+        .back-icon {
+          width: 24px;
+          aspect-ratio: 1.09;
+          object-fit: contain;
+        }
+        
+        .main-content {
+          margin-top: 13px;
+          max-width: 360px;
+          width: 100%;
+          margin-left: 15px;
+        }
+        
+        .section-title {
+          font-weight: 700;
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        
+        .section-content {
+          background-color: #fff;
+          border-radius: 15px;
+          padding: 12px 10px;
+          margin-bottom: 20px;
+        }
+        
+        .slider-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+        
+        .slider-track {
+          background-color: #24945e;
+          height: 5px;
+          flex-grow: 1;
+          margin-left: 10px;
+        }
+
+        .slider-track-grey {
+          background-color: #E4E4E4;
+          height: 5px;
+          flex-grow: 1;
+          margin-right: 10px;
+        }
+        
+        .slider-thumb {
+          width: 35px;
+          aspect-ratio: 1;
+          object-fit: contain;
+        }
+        
+        .slider-label {
+          color: #727680;
+          font-size: 12px;
+          text-align: center;
+        }
+        
+        .option-list {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        .option-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+        
+        .option-icon {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+        
+        .option-text {
+          font-size: 8px;
+          line-height: 24px;
+        }
+        
+        .submit-button {
+          background-color: #24945e;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          padding: 15px 36px;
+          font-weight: 700;
+          font-size: 12px;
+          cursor: pointer;
+          width: 125%;
+        }
+        
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+        .section-title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .section-title-container .right-aligned {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .section-title-container .iternal {
+            font-size: 12px;
+            color: #727680;
+        }
+        </style>
+</head>
+<body>
+        <section class="plan-change-conditions">
+          <header>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/827ecb7b7fd7aac3755e5e3ad479be163336cfd0f99e610a43cdcf9f1f3ab07a?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="" class="header-image">
+            <div class="title-container">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1a114d1383aa5c7665e3723edd600d9fb3d054390bf694d10bc6c4483966f0c?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="Back" class="back-icon">
+              <h1>요금제 변경 조건</h1>
+            </div>
+          </header>
+        
+          <main class="main-content">
+            <section>
+              <div class="section-title-container">
+                <h2 class="section-title">데이터량</h2>
+                <div class="right-aligned">
+                    <h2 class="iternal">무제한</h2>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9fadc6df4ef1caee205fd8341a124e775d3560705c2dc753965e64b8c1cea2ba?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="Slider thumb" class="slider-thumb">
+                </div>
+              </div>
+              <div class="section-content">
+                <div class="slider-container">
+                  <span class="slider-label">0GB</span>
+                  <div class="slider-track"></div>
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9fadc6df4ef1caee205fd8341a124e775d3560705c2dc753965e64b8c1cea2ba?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="Slider thumb" class="slider-thumb">
+                  <div class="slider-track-grey"></div>
+                  <span class="slider-label">100GB</span>
+                </div>
+                <p class="slider-label">50GB</p>
+              </div>
+            </section>
+        
+            <section>
+              <h2 class="section-title">통화량</h2>
+              <div class="section-content">
+                <div class="slider-container">
+                  <span class="slider-label">0분</span>
+                  <div class="slider-track"></div>
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9fadc6df4ef1caee205fd8341a124e775d3560705c2dc753965e64b8c1cea2ba?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="Slider thumb" class="slider-thumb">
+                  <div class="slider-track-grey"></div>
+                  <span class="slider-label">1500분</span>
+                </div>
+                <p class="slider-label">3000분</p>
+              </div>
+            </section>
+        
+            <section>
+              <h2 class="section-title">문자량</h2>
+              <div class="section-content">
+                <div class="slider-container">
+                  <span class="slider-label">0건</span>
+                  <div class="slider-track"></div>
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9fadc6df4ef1caee205fd8341a124e775d3560705c2dc753965e64b8c1cea2ba?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="Slider thumb" class="slider-thumb">
+                  <div class="slider-track-grey"></div>
+                  <span class="slider-label">250건</span>
+                </div>
+                <p class="slider-label">500건</p>
+              </div>
+            </section>
+        
+            <section>
+              <h2 class="section-title">소진시 속도</h2>
+              <div class="section-content">
+                <ul class="option-list">
+                  <li class="option-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/64fa0dbf8bd644a063927880b609cc5017d4dab8f6e237a27a3bbdd7087b963e?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="" class="option-icon">
+                    <div>
+                      <p class="option-text">1Mbps 미만</p>
+                      <p class="option-text">카톡 텍스트는 되지만 사진은 느려요</p>
+                    </div>
+                  </li>
+                  <li class="option-item">
+                    <div class="option-icon"></div>
+                    <div>
+                      <p class="option-text">1Mbps</p>
+                      <p class="option-text">3G보다 조금 느려요</p>
+                    </div>
+                  </li>
+                  <li class="option-item">
+                    <div class="option-icon"></div>
+                    <div>
+                      <p class="option-text">3Mbps</p>
+                      <p class="option-text">유튜브를 720p 화질로 볼 수 있어요</p>
+                    </div>
+                  </li>
+                  <li class="option-item">
+                    <div class="option-icon"></div>
+                    <div>
+                      <p class="option-text">5Mbps</p>
+                      <p class="option-text">유튜브를 1080p 화질로 볼 수 있어요</p>
+                    </div>
+                  </li>
+                  <li class="option-item">
+                    <div class="option-icon"></div>
+                    <div>
+                      <p class="option-text">10Mbps</p>
+                      <p class="option-text">유튜브 고화질도 문제 없어요</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+        
+            <section>
+              <h2 class="section-title">통신 기술</h2>
+              <div class="section-content">
+                <ul class="option-list">
+                  <li class="option-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/792605b4ad760cfd6fe3d0c5b25d9dfa5b75c2acaa3d0c6cfda5dfede58097bc?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="" class="option-icon">
+                    <p class="option-text">5G</p>
+                  </li>
+                  <li class="option-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/64fa0dbf8bd644a063927880b609cc5017d4dab8f6e237a27a3bbdd7087b963e?placeholderIfAbsent=true&amp;apiKey=c94bd488190e477b9d82656046f3d51b" alt="" class="option-icon">
+                    <p class="option-text">4G (LTE)</p>
+                  </li>
+                  <li class="option-item">
+                    <div class="option-icon"></div>
+                    <p class="option-text">3G</p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+        
+            <section>
+              <h2 class="section-title">통신망</h2>
+              <div class="section-content">
+                <ul class="option-list">
+                  <li class="option-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6546523c55469fb79bc387115d1aca26249249e74b25813c41c50d12cfb6138e?placeholderIfAbsent=true&apiKey=c94bd488190e477b9d82656046f3d51b" alt="" class="option-icon">
+                    <p class="option-text">SKT망</p>
+                  </li>
+                  <li class="option-item">
+                    <div class="option-icon"></div>
+                    <p class="option-text">KT망</p>
+                  </li>
+                  <li class="option-item">
+                    <div class="option-icon"></div>
+                    <p class="option-text">LG U+망</p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+        
+            <button class="submit-button">설정 완료</button>
+          </main>
+        </section>
+</body>
+</html>
